@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Get the filename from the environment variable
-filename=$PYFILE
-
-# Compile the file
-python -m py_compile $filename
-
-# Rename the compiled file
-mv ${filename}c ${filename%.*}.pyc
+python3 -m compileall -b $PYFILE i
