@@ -2,4 +2,4 @@
 
 for letter in range(ord('a'), ord('z') + 1):
     if letter != ord('q') and letter != ord('e'):
-        print(f"{chr(letter)}", end='')
+        print("{}".format(chr(letter)), end='')
