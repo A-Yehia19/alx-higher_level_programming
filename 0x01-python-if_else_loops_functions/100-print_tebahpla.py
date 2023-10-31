@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
-for letter in range(ord('a'), ord('z') + 1):
-    if letter != ord('q') and letter != ord('e'):
-        print(chr(letter), end='')
+for i in range(ord('z'), ord('a') - 1, -1):
+    char = i
+    if i % 2 != 0:
+        char = char - 32
+    print("{:c}".format(char), end='')

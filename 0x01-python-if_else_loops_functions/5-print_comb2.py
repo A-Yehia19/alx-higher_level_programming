@@ -2,6 +2,6 @@
 
 for num in range(100):
     if num < 99:
-        print(str(num).zfill(2), end=", ")
+        print(f"{num:02d}", end=", ")
     else:
-        print(str(num).zfill(2))
+        print(num)
