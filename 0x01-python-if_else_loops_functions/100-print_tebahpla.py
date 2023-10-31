@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 
-for c in range(ord('z'), ord('a') - 1, -2):
-    print("{:c}{:s}".format(c, chr(c - 33)), end="")
+for i in range(ord('z'), ord('a') - 1, -1):
+    char = i
+    if i % 2 != 0:
+        char = char - 32
+    print("{:c}".format(char), end='')
