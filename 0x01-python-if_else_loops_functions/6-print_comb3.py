@@ -2,5 +2,7 @@
 
 for tens in range(10):
     for ones in range(tens + 1, 10):
-        num = tens * 10 + ones
-        print(str(num).zfill(2), end=", " if num < 99 else "\n")
+        if tens * 10 + ones < 99:
+            print(str(tens * 10 + ones).zfill(2), end=", ")
+        else:
+            print(str(tens * 10 + ones).zfill(2))
