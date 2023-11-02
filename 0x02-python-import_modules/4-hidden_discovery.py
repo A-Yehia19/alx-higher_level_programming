@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-if __name__ == '__main__':
-    names = dir('hidden_4.pyc')
+from hidden_4 import *
 
-    for name in names:
+if __name__ == '__main__':
+    for name in dir():
         if name[:2] != '__':
             print(name)
