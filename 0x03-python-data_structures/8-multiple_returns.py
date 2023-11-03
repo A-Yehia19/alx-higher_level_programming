@@ -1,4 +1,10 @@
 #!/usr/bin/python3
 
-if __name__ == '__main__':
-    pass
+def multiple_returns(sentence):
+    length = len(sentence)
+    if length == 0:
+        char = None
+    else:
+        char = sentence[0]
+
+    return(length, char)

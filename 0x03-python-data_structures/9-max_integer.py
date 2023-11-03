@@ -1,4 +1,11 @@
 #!/usr/bin/python3
 
-if __name__ == '__main__':
-    pass
+def max_integer(my_list=[]):
+    ans = None
+    for num in my_list:
+        if ans == None:
+            ans = num
+        elif ans < num:
+            ans = num
+
+    return ans
