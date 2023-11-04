@@ -7,9 +7,9 @@ def print_matrix_integer(matrix=[[]]):
             print('{:d}'.format(num), end='')
             counter += 1
             if num == row[-1]:
-                print();
+                print()
             else:
                 print(' ', end='')
-    
+
     if counter == 0:
         print()

@@ -7,4 +7,4 @@ def multiple_returns(sentence):
     else:
         char = sentence[0]
 
-    return(length, char)
+    return (length, char)
