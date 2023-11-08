@@ -6,6 +6,6 @@ def search_replace(my_list, search, replace):
         if num == search:
             tmp.append(replace)
         else:
-            tmp.append(search)
+            tmp.append(num)
 
     return tmp
