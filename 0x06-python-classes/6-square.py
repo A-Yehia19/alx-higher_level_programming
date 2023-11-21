@@ -21,9 +21,9 @@ class Square:
                 TypeError: If position is not a tuple of 2 positive integers.
         '''
         # Check if size is an integer using the setter
-        self.__size = size
+        self.size = size
         # Check if position is a tuple of 2 positive integers using the setter
-        self.__position = position
+        self.position = position
 
     ''' Instance method: area '''
     def area(self):
@@ -69,12 +69,13 @@ class Square:
             Raises:
                 TypeError: If position is not a tuple of 2 positive integers.
          '''
+        errmsg = 'position must be a tuple of 2 positive integers'
         if type(value) is not tuple or len(value) != 2:
-            raise TypeError('position must be a tuple of 2 positive integers')
+            raise TypeError(errmsg)
         elif type(value[0]) is not int or value[0] < 0:
-            raise TypeError('position must be a tuple of 2 positive integers')
+            raise TypeError(errmsg)
         elif type(value[1]) is not int or value[1] < 0:
-            raise TypeError('position must be a tuple of 2 positive integers')
+            raise TypeError(errmsg)
         self.__position = value
 
     ''' Instance method: my_print '''

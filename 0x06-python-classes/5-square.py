@@ -18,7 +18,7 @@ class Square:
                 ValueError: If size is less than 0.
         '''
         # Check if size is an integer using the setter
-        self.__size = size
+        self.size = size
 
     ''' Instance method: area '''
     def area(self):
