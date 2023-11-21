@@ -80,25 +80,27 @@ class Square:
 
     ''' Instance method: my_print '''
     def my_print(self):
-        ''' Print a square of # positioned by position and
-            return it as a string
-        '''
-        printed = ''
+        ''' Print a square of # positioned by position'''
         if self.__size == 0:
             print()
         else:
             for lines in range(self.__position[1]):
                 print()
-                printed += '\n'
             for i in range(self.__size):
                 print(' ' * self.__position[0], end='')
                 print('#' * self.__size)
-                printed += ' ' * self.__position[0]
-                printed += '#' * self.__size
-                printed += '\n'
-        return printed
 
     ''' Magic method: __str__ '''
     def __str__(self) -> str:
         ''' Return the string representation of the square '''
-        return self.my_print()
+        string = ''
+        if self.__size == 0:
+            string += '\n'
+        else:
+            for lines in range(self.__position[1]):
+                string += '\n'
+            for i in range(self.__size):
+                string += ' ' * self.__position[0]
+                string += '#' * self.__size
+                string += '\n'
+        return string[:-1]
