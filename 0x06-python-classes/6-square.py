@@ -20,14 +20,9 @@ class Square:
                 ValueError: If size is less than 0.
                 TypeError: If position is not a tuple of 2 positive integers.
         '''
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
+        # Check if size is an integer using the setter
         self.__size = size
-
-        if type(position) is not tuple or len(position) != 2:
-            raise TypeError('position must be a tuple of 2 positive integers')
+        # Check if position is a tuple of 2 positive integers using the setter
         self.__position = position
 
     ''' Instance method: area '''
@@ -75,6 +70,10 @@ class Square:
                 TypeError: If position is not a tuple of 2 positive integers.
          '''
         if type(value) is not tuple or len(value) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        elif type(value[0]) is not int or value[0] < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        elif type(value[1]) is not int or value[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
 
