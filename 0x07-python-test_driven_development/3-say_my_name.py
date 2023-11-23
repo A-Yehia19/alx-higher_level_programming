@@ -1,8 +1,4 @@
 #!/usr/bin/python3
 
-''' Empty Square Class'''
-
-
-class Square:
-    ''' pass to define empty Square class'''
+def say_my_name(first_name, last_name=""):
     pass

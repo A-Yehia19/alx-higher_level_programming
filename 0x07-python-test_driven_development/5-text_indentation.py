@@ -1,8 +1,4 @@
 #!/usr/bin/python3
 
-''' Empty Square Class'''
-
-
-class Square:
-    ''' pass to define empty Square class'''
+def text_indentation(text):
     pass
