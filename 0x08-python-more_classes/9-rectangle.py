@@ -80,7 +80,7 @@ class Rectangle:
         return (self.__width + self.__height)*2
 
     def __str__(self):
-        ''' Print rectangle using #.'''
+        ''' Print rectangle using rectangle symbol.'''
         if self.__width == 0 or self.__height == 0:
             return ""
         row = str(self.print_symbol)*self.__width
