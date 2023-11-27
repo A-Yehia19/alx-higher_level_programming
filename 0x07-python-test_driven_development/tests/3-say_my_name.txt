@@ -1,0 +1,54 @@
+============================
+``3-say_my_name`` module
+============================
+
+Using ``say_my_name``
+-------------------
+
+``say_my_name()`` will take two strings as arguments and
+return them concatinated with space between
+
+::
+
+Importing function from the module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now Use it
+
+    >>> say_my_name('hu', 'tao')
+    My name is hu tao
+
+    >>> say_my_name('hu', '')
+    My name is hu 
+
+    >>> say_my_name('', 'tao')
+    My name is  tao
+
+    >>> say_my_name('6', '9')
+    My name is 6 9
+
+    >>> say_my_name('hu'*3, 'tao')
+    My name is huhuhu tao
+
+    >>> say_my_name('hu'*3)
+    My name is huhuhu 
+
+    >>> say_my_name(6, 9)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name('6', 9)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+    >>> say_my_name('6', None)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'

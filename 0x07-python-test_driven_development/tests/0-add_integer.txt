@@ -14,6 +14,7 @@ Importing function from the module:
     >>> add_integer = __import__('0-add_integer').add_integer
 
 Now Use it
+
     >>> add_integer(3, 4)
     7
 
@@ -81,7 +82,7 @@ Now Use it
     >>> add_integer(5, float("nan"))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
-    
+
     >>> add_integer(1, float('inf'))
     Traceback (most recent call last):
     ...

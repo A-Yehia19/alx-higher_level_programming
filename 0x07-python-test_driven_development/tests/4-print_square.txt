@@ -1,0 +1,51 @@
+============================
+``4-print_square`` module
+============================
+
+Using ``print_square``
+-------------------
+
+``print_square()`` will take 1 argument that must be integer of float
+that represent size of square to print with '#' character
+
+::
+
+Importing function from the module:
+    >>> print_square = __import__('4-print_square').print_square
+
+Now Use it
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+    >>> print_square(1)
+    #
+
+    >>> print_square(3.2)
+    ###
+    ###
+    ###
+
+    >>> print_square(0)
+
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be >= 0
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square('a')
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
