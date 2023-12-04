@@ -13,8 +13,8 @@ class Rectangle(BaseGeometry):
 
     Methods:
         __init__(self, width, height): initializes a Rectangle object
-        print(self): prints the Rectangle description
         area(self): returns the area of a Rectangle object
+        print(self): prints the Rectangle description
         __str__(self): returns a string representation of a Rectangle object
 
     Raises:
