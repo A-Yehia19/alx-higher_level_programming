@@ -5,7 +5,33 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Class that defines a Rectangle object"""
+    """Class that defines a Rectangle object
+
+    Attributes:
+        width (int): width of the Rectangle object
+        height (int): height of the Rectangle object
+
+    Methods:
+        __init__(self, width, height): initializes a Rectangle object
+        print(self): prints the Rectangle description
+        __str__(self): returns a string representation of a Rectangle object
+
+    Raises:
+        TypeError: if width or height are not integers
+        ValueError: if width or height are less or equal to zero
+    """
     def __init__(self, width, height):
-        """Initializes a Rectangle object"""
-        pass
+        """Initializes a Rectangle object
+
+        Args:
+            width (int): width of the Rectangle object
+            height (int): height of the Rectangle object
+
+        Raises:
+            TypeError: if width or height are not integers
+            ValueError: if width or height are less or equal to zero
+        """
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
