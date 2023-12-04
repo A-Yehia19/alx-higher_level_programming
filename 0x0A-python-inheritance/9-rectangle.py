@@ -63,7 +63,7 @@ class Rectangle(BaseGeometry):
         Raises:
             None
         """
-        print("[Rectangle] {}/{}".format(self.__width, self.__height))
+        print("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
 
     def __str__(self):
         """Returns a string representation of a Rectangle object
@@ -77,4 +77,4 @@ class Rectangle(BaseGeometry):
         Raises:
             None
         """
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)

@@ -60,7 +60,7 @@ class Square(Rectangle):
         Raises:
             None
         """
-        print("[Square] {}/{}".format(self.__size, self.__size))
+        print("[Square] {:d}/{:d}".format(self.__size, self.__size))
 
     def __str__(self):
         """Returns a string representation of a Square object
@@ -74,4 +74,4 @@ class Square(Rectangle):
         Raises:
             None
         """
-        return "[Square] {}/{}".format(self.__size, self.__size)
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size)
