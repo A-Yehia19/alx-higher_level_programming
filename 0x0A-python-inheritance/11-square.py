@@ -34,20 +34,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    def area(self):
-        """Returns the area of a Square object
-
-        Args:
-            None
-
-        Returns:
-            (int) Area of the Square object
-
-        Raises:
-            None
-        """
-        return super().area()
-
     def print(self):
         """Prints the Square description: [Square] <width>/<height>
 
