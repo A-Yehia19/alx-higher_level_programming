@@ -31,6 +31,7 @@ class Square(Rectangle):
             ValueError: if size is less or equal to zero
         """
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
@@ -45,7 +46,7 @@ class Square(Rectangle):
         Raises:
             None
         """
-        return self.__size ** 2
+        return super().area()
 
     def print(self):
         """Prints the Square description: [Square] <width>/<height>
