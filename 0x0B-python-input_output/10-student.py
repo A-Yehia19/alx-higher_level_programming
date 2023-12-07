@@ -40,13 +40,13 @@ class Student:
         if age < 0:
             raise ValueError('age must be >= 0')
 
-        self.__first_name = first_name
-        self.__last_name = last_name
-        self.__age = age
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
     def to_json(self, attrs=None):
         '''Returns the dictionary representation of a Student instance'''
-        if attrs is list and all(type(x) is str for x in attrs):
+        if type(attrs) is list and all(type(x) is str for x in attrs):
             new_dict = {}
             for key in attrs:
                 if key in self.__dict__:
