@@ -26,20 +26,8 @@ class Student:
             age (int): age of student
 
         Raises:
-            TypeError: if first_name is not a string
-            TypeError: if last_name is not a string
-            TypeError: if age is not an integer
-            ValueError: if age is less than 0
+            NONE
         '''
-        if type(first_name) is not str:
-            raise TypeError('first_name must be a string')
-        if type(last_name) is not str:
-            raise TypeError('last_name must be a string')
-        if type(age) is not int:
-            raise TypeError('age must be an integer')
-        if age < 0:
-            raise ValueError('age must be >= 0')
-
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
@@ -47,3 +35,13 @@ class Student:
     def to_json(self):
         '''Returns the dictionary representation of a Student instance'''
         return self.__dict__
+
+students = [Student("John", "Doe", 23), Student("Bob", "Dylan", 27)]
+
+for student in students:
+    j_student = student.to_json()
+    print(type(j_student))
+    print(j_student['first_name'])
+    print(type(j_student['first_name']))
+    print(j_student['age'])
+    print(type(j_student['age']))
