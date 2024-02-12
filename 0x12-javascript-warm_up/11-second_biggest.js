@@ -1,8 +1,6 @@
 #!/usr/bin/node
 
-const { argv } = require('node:process');
-
-const numbers = argv.slice(2);
+const numbers = process.argv.slice(2);
 
 if (numbers.length <= 1) {
   console.log(0);
