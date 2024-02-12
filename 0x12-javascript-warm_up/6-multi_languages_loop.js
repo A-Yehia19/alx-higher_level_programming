@@ -1,5 +1,6 @@
 #!/usr/bin/node
-const arr = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+
+const arr = ['C is fun\n', 'Python is cool\n', 'Javascript is amazing\n'];
 const len = arr.length;
 let i = 0;
 
