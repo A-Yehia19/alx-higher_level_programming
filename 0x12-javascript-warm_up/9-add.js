@@ -2,7 +2,7 @@
 
 const { argv } = require('node:process');
 
-function add(a, b){
+function add (a, b) {
   return a + b;
 }
 
