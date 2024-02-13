@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 exports.esrever = function (list) {
-  const newList = [];
+  let newList = [];
   for (const obj of list) {
     newList.push(obj);
   }
