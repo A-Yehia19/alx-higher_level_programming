@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 exports.esrever = function (list) {
-  let newList = [];
-  for (const obj of list) {
-    newList.push(obj);
+  const newList = [];
+  while (list.length) {
+    newList.push(list.pop());
   }
   return newList;
 };
